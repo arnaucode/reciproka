@@ -13,8 +13,8 @@ contract Accounts {
   event BalanceUpdated(address sender, address receiver, int64 value);
 
   function updateBalance(address _receiver, int64 _value) public {
-    // get Account of _sender
     // check if balance of _sender is under the limit
+    require(accounts[msg.sender].Balance - _value > -100, "too much negative balance");
     // substract _value from _sender account
     accounts[msg.sender].Balance = accounts[msg.sender].Balance - _value;
     // add _value to _receiver account

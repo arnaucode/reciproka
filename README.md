@@ -3,6 +3,9 @@ Decentralized mutual credit system based on Ethereum smart contracts.
 
 **For the moment this is an implementation of a Proof of Concept.**
 
+![reciprokaWallet](https://raw.githubusercontent.com/arnaucode/reciproka/master/r1.png "reciprokaWallet")
+![reciprokaWallet](https://raw.githubusercontent.com/arnaucode/reciproka/master/r2.png "reciprokaWallet")
+
 ## Components
 - Smart contracts
   - Ethereum Solidity
