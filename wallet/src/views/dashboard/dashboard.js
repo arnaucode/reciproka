@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import mem from '../../mem/mem';
+
 // import {card, tx} from '../../kit/lib'
 import { Card, Button, Timeline, Row, Col, List, Icon } from 'antd';
 import 'antd/dist/antd.css';
@@ -46,6 +48,8 @@ class dashboard extends Component {
       <div>
         <Row gutter={16}>
           <Col span={8}>
+            <p>Current Credit balance: <b>{mem.balance}</b></p>
+            <p style={{fontSize: 10}}>Current ETH balance: {mem.ethBalance}</p>
             <Line
               height={200}
               data={chartLineData}
@@ -69,6 +73,9 @@ class dashboard extends Component {
               </List>
             </Card>
           </Col>
+          <Col span={8}>
+
+          </Col>
         </Row>
         <br/>
           <Row gutter={16}>
@@ -81,11 +88,11 @@ class dashboard extends Component {
                   <Timeline.Item color="red">
                     Sended 20 credits · <i>2018-08-06</i>
                   </Timeline.Item>
-                  <Timeline.Item color="green">
-                    Received 15 credits · <i>2018-08-05</i>
-                  </Timeline.Item>
                   <Timeline.Item color="red">
                     Sended 20 credits · <i>2018-08-05</i>
+                  </Timeline.Item>
+                  <Timeline.Item color="green">
+                    Received 15 credits · <i>2018-08-05</i>
                   </Timeline.Item>
                   <Timeline.Item color="green">
                     Received 15 credits · <i>2018-08-04</i>

@@ -34,8 +34,16 @@ class dashboard extends Component {
             <Icon type="plus" />New transaction
           </NavLink>
       </Menu.Item>
-        <Menu.Item key="3"><Icon type="calendar" />History</Menu.Item>
-        <Menu.Item key="4"><Icon type="pie-chart" />Stats</Menu.Item>
+          <Menu.Item key="3">
+            <NavLink to="/notyet">
+            <Icon type="calendar" />History
+          </NavLink>
+        </Menu.Item>
+        <Menu.Item key="4">
+          <NavLink to="/notyet">
+            <Icon type="pie-chart" />Stats
+          </NavLink>
+        </Menu.Item>
       </Menu>
     );
   }

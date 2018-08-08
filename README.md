@@ -3,8 +3,8 @@ Decentralized mutual credit system based on Ethereum smart contracts.
 
 **For the moment this is an implementation of a Proof of Concept.**
 
-![reciprokaWallet](https://raw.githubusercontent.com/arnaucode/reciproka/master/r1.png "reciprokaWallet")
-![reciprokaWallet](https://raw.githubusercontent.com/arnaucode/reciproka/master/r2.png "reciprokaWallet")
+![reciprokaWallet](https://raw.githubusercontent.com/arnaucode/reciproka/master/doc/r1.png "reciprokaWallet")
+![reciprokaWallet](https://raw.githubusercontent.com/arnaucode/reciproka/master/doc/r2.png "reciprokaWallet")
 
 ## Components
 - Smart contracts
@@ -16,7 +16,7 @@ Decentralized mutual credit system based on Ethereum smart contracts.
 
 ## Documentation
 
-Each user connects to `reciproka` throught the frontend wallet app. Once the app is opened, it creates a new ethereum private key (if the user already have one, loads it).
+Each user connects to `reciproka` throught the frontend wallet app. The app can be loaded from `IPFS`. Once the app is opened, it creates a new ethereum private key (if the user already have one, loads it).
 
 
 ### Transaction action:
@@ -29,6 +29,8 @@ Each user connects to `reciproka` throught the frontend wallet app. Once the app
     - u1: -10
     - u2: 10
 
+
+![reciproka-diagram01](https://raw.githubusercontent.com/arnaucode/reciproka/master/doc/reciproka-diagram01.png "reciproka-diagram01")
 
 ### Account
 Account data structure:
